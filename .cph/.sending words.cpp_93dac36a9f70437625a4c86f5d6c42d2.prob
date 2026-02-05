@@ -1,1 +1,0 @@
-{"name":"Local: sending words","url":"c:\\Users\\user\\Documents\\codeblocks\\c++\\Codeforces\\sending words.cpp","tests":[{"id":1769205298757,"input":"4 4  \n1 2  \n2 3  \n3 4  \n1 4 ","output":"1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\user\\Documents\\codeblocks\\c++\\Codeforces\\sending words.cpp","group":"local","local":true}
