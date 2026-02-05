@@ -1,0 +1,15 @@
+# ===== C++ compiled files =====
+*.exe
+*.out
+*.o
+
+# ===== Windows junk =====
+Thumbs.db
+Desktop.ini
+
+# ===== VS Code =====
+.vscode/
+
+# ===== Debug / temp =====
+*.log
+*.tmp
