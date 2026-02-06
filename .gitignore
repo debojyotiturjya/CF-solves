@@ -13,3 +13,5 @@ Desktop.ini
 # ===== Debug / temp =====
 *.log
 *.tmp
+# ===== CP Helper =====
+.cph/
