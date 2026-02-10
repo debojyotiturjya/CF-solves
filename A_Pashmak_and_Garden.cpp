@@ -26,6 +26,3 @@ int main(){
     vogoban_vorsha();
     solve();
 }
-/*
-
-*/
