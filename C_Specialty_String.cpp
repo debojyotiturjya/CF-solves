@@ -7,7 +7,19 @@ void vogoban_vorsha(){
     cin.tie(nullptr);
 }
 void solve(){
+    int n; string s; cin>>n>>s;
     
+    stack<char>st;
+
+    for(char c:s){
+        if(!st.empty() && c==st.top()) st.pop();
+        else st.push(c);
+    }
+
+    if(st.empty()) cout<<"YES\n";
+    else cout<<"NO\n";
+
+
 }
 int main(){
     vogoban_vorsha();
