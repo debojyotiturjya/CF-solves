@@ -13,5 +13,5 @@ int main(){
     vogoban_vorsha();
     int t; cin>>t; 
     while(t--) 
-        solve();
+    solve();
 }
