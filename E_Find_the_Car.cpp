@@ -11,24 +11,22 @@ void vogoban_vorsha(){
 void solve(){
     int n,k,q; cin>>n>>k>>q;
 
-    vector<int>p(k),t(k);
+    vector<ll>p(k),t(k);
 
-    for(int i=0;i<n;i++) cin>>p[i];
-    for(int i=0;i<n;i++) cin>>t[i];
-
-    vector<double>tn(n);
-
-    for(int i=1;i<n;i++){
-        tn[i]=(p[i]-p[i-1])/(t[i]-t[i-1])*1.0;
-    }
-
-    for(int x:tn) cout<<x<<' ';
+    for(int i=0;i<k;i++) cin>>p[i];
+    for(int i=0;i<k;i++) cin>>t[i];
 
     while(q--){
-        int d; cin>>d;
-        auto ind= lower_bound(p.begin(),p.end(),d)-p[0];
-        double ans=tn[ind+1];
+        int x; cin>>x;
+        int idx=lower_bound(p.begin(),p.end(),x)-p.begin();
+        // cout<<idx<<' ';
+        // cout<<'\n';
+        double s=double(p[idx+1]-p[idx])/double(t[idx+1]-t[idx]);
+        
+        double as=t[idx]+double(x-p[idx])*s;
+        cout<<as<<' ';
     }
+    cout<<'\n';
 }
 int main(){
     vogoban_vorsha();
